@@ -1,0 +1,19 @@
+@use 'variables';
+
+@mixin xl{
+@media(max-width:variables.$xl){
+    @content;
+}
+}
+
+@mixin m{
+@media(max-width:variables.$m){
+     @content;
+}
+}
+
+@mixin s{
+@media(max-width:variables.$s){
+         @content;
+}
+}

@@ -1,0 +1,528 @@
+@use'responsive';
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 74%, rgba(255,229,211,1) 100%);
+  }
+  .container{
+  
+      header{
+        padding-top: 50px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          @include responsive.xl{
+            width: 1000px;
+          }
+          @include responsive.s{
+            width: 400px;
+            justify-content: flex-start;
+            padding-left: 20px;
+          }
+          .header-logo{
+              display: flex;
+    gap: 15px;
+}
+.navigation{
+    display: flex;
+    gap: 50px;
+    @include responsive.m{
+        display: none;
+    }
+    ul{
+        list-style:none;
+        display: flex;
+        gap: 50px;
+        li{
+            a{
+            text-decoration: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size:16px ;
+            text-transform: capitalize;
+            color: #333333;
+            font-weight: 600;
+        }
+        a:hover{
+            color: rgb(20, 122, 78);
+            border: solid 5px rgb(58, 79, 26);
+        }
+       
+    }
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(100, 123, 100);
+    color: rgb(254, 254, 254);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:16px ;
+        font-weight: 600;
+    }
+}
+
+
+}
+
+
+}
+.inner-container{
+    width: 1160px;
+    margin: auto auto;
+    @include responsive.xl{
+        width: 1000px;
+    }
+    @include responsive.s{
+        width: 400px;
+    }
+
+    .hero-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        @include responsive.xl{
+            justify-content: space-around;
+        }
+        @include responsive.s{
+            flex-wrap: wrap;
+        }
+        .hero-content{
+            width: 50%;
+          @include responsive.s{
+            width: 100%;
+            padding: 20px;
+          }
+            h1{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 50px;
+        }
+        a{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 70%;
+            text-decoration: none;
+            padding: 20px;
+            background-color: rgb(100, 123, 100);
+            border:none;
+            border-radius: 3px;
+            color: rgb(254, 254, 254);
+            text-transform:uppercase;
+        }
+    }
+    .image{
+        width:35%;
+       @include responsive.s{
+        width: 100%;
+       }
+     
+        img{
+            width: 100%;
+        }
+    }
+}
+.main{
+    margin-top: 100px;
+    display: flex;
+    gap: 120px;
+    @include responsive.xl{
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    }
+    .info{
+        width: 50%;
+@include responsive.s{
+    width: 100%;
+}
+        .name{
+               display: flex;
+               flex-direction: column;
+               gap: 20px;
+               align-items: center;
+               justify-content: center;
+               padding-bottom: 30px;
+               padding-top: 20px;
+               
+            background: rgb(239,128,49);
+            background: linear-gradient(0deg, rgba(239,128,49,0.07746848739495793) 20%, rgba(239,128,49,0.23153011204481788) 35%);
+            .name1{
+                color: rgb(243, 181, 98);
+                text-transform: uppercase;
+                margin: 0;
+               
+            }
+            .name2{
+                color:rgb(100, 123, 100) ;
+                text-transform: uppercase;
+                font-size: 40px;
+                margin: 0;
+            }
+        }
+        .paragraph{
+            padding: 20px;
+            color: rgb(79, 79, 79);
+        }
+        a{
+
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 70%;
+            text-decoration: none;
+            padding: 20px;
+            background-color: rgb(100, 123, 100);
+            border:none;
+            border-radius: 3px;
+            color: rgba(254, 254, 254, 1);
+            text-transform:uppercase;
+    }
+    }
+    .main-inner-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 50%;
+        margin-top: 50px;
+        @include responsive.s{
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            margin: auto auto;
+        }
+        .padding{
+            padding: 20px;
+        }
+        .main-inner{
+            width: 48%;
+            background-color: white;
+            border-radius: 10px;
+            .main-image1{
+                border-radius: 5px;
+                background-color: rgba(100, 123, 100, 1);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 48px;
+                width: 48px;
+            }
+        }
+        .main-inner1{
+            width: 48%;
+            .main-image{
+               
+                background-color: white;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 48px;
+                width: 48px;
+               
+            }
+        }
+    }
+    
+}
+
+.main2{
+    margin-top: 100px;
+    .name1{
+        color:rgba(243, 181, 98, 1);
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .name2{
+       color: rgba(100, 123, 100, 1);
+       text-align: center;
+       text-transform: uppercase;
+    }
+    .main2-wrapper{
+        position: relative;
+display: flex;
+gap: 30px;
+@include responsive.s{
+    flex-direction: column;
+}
+
+        .main2-inner{
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+            position: relative;
+         
+            h2{
+                color: rgba(51, 51, 51, 1);
+                margin: 0;
+                padding: 20px;
+            }
+            p{
+                color: rgba(51, 51, 51, 1);
+                margin: 0;
+                padding: 10px;
+            }
+            position: relative;
+            width: 50%;
+            background: rgb(255,255,255);
+            background: linear-gradient(180deg, rgba(255,255,255,1) 9%, rgba(211,255,225,1) 100%);
+            padding-top: 50px;
+            padding-left:  30px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            border-radius: 10px;
+            @include responsive.s{
+                width: 100%;
+            }
+        .main2-image{
+            height: 64px;
+            width: 64px;
+            
+        }
+      
+    }
+    .main2-inner1{
+        @include responsive.s{
+            width: 100%;
+        }
+        background-color: rgba(100, 123, 100, 1);
+        width: 50%; 
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 50px;
+        padding-left:  30px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        h2{
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        p{
+            color: white;
+            margin: 0;
+            padding: 10px;
+        }
+        .main2-image{
+            height: 64px;
+            width: 64px;
+        }
+    }
+}
+}
+.main3{
+margin-top: 200px;
+.main3-wrapper{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    @include responsive.s{
+        flex-direction: column;
+    }
+    .main3-image{
+        width: 50%;
+        position: relative;
+        @include responsive.s{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+        .pass{
+            position: absolute;
+            bottom: -40px;
+            right: -40px;
+         z-index: -1;
+        }
+    }
+    .main3-content{
+        width: 50%;
+        padding: 30px;
+        @include responsive.s{
+            width: 100%;
+        }
+        .name1{
+            color: rgba(243, 181, 98, 1);
+            text-transform: uppercase;
+        }
+        .name2{
+            color:rgba(100, 123, 100, 1) ;
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+        p{
+            color: rgba(79, 79, 79, 1);
+            font-size: 16px;
+        }
+        a{
+
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 70%;
+            text-decoration: none;
+            padding: 20px;
+            background-color: rgb(100, 123, 100);
+            border:none;
+            border-radius: 3px;
+            color: rgba(254, 254, 254, 1);
+            text-transform:uppercase;
+    }
+    }
+}
+}
+.main4{
+    margin-top: 200px;
+    padding-bottom: 200px;
+    .main4-name{
+        .name-box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .arrow{
+            button{
+                border: none;
+                background-color: transparent;
+            }
+            @include responsive.s{
+                display: none;
+            }
+        }
+        .name1{
+           color: rgba(243, 181, 98, 1);
+           text-transform: uppercase;
+        }
+        .name2{
+            color: rgba(100, 123, 100, 1);
+            text-transform: uppercase;
+            font-size: 35px;
+        }
+    }
+    .main4-container{
+  display: flex;
+  gap: 40px;
+  @include responsive.s{
+    flex-direction: column;
+  }
+.main4-box1{
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 82%, rgba(163,191,163,1) 100%);
+    border-radius: 10px;
+    p{
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .main4-box1-wrapper{
+        padding: 30px;
+        display: flex;
+    
+    }
+}
+    }
+    
+   
+}
+}
+footer{
+    margin: 0;
+    padding-bottom: 200px;
+   background-color: rgba(240, 220, 197, 1);
+    .inner-container{  
+     display: flex;
+     justify-content: space-between;
+     padding-top: 100px;
+     @include responsive.s{
+        flex-direction: column;
+      align-items: flex-start;
+     }
+        .footer-box{
+            width: 13%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;  
+    @include responsive.s{
+        width: 100%;
+    }
+    .footer-logo{
+            display: flex;
+            gap: 20px;
+        }
+        .texts{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    p{
+        margin: 0;
+    }
+    
+}
+.links{
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 35px;
+        padding: 0;
+        margin: 0;
+    }
+}
+}
+.footer-box1{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .name{
+        margin: 0;
+        padding: 0;
+        h2{
+    color: rgba(100, 123, 100, 1);
+    text-transform: uppercase;
+}
+    }
+    .links{
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                margin: 0;
+                gap: 35px;
+            };
+            
+        }
+    }
+.footer-box2{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   
+    .name{
+        color: rgba(100, 123, 100, 1);
+    text-transform: uppercase;
+    }
+    a{
+        
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+     
+        text-decoration: none;
+        padding: 20px;
+        background-color: rgb(100, 123, 100);
+        border:none;
+        border-radius: 3px;
+        color: rgba(254, 254, 254, 1);
+        text-transform:uppercase;
+    }
+}
+}
+}
